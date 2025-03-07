@@ -10,17 +10,17 @@ export function handleSummary(data) {
 
 // Criar o payload (dados a serem enviados)
 let payload = JSON.stringify({
-  cpf: "03148250109"
+  cpf: "xxxx"
 });
 
 
 // URLs da API (Defina no ambiente ou altere aqui diretamente)
-const BASE_URL = __ENV.K6_API_URL || 'https://snap-api.azure-api.net';
+const BASE_URL = __ENV.K6_API_URL || 'xxxx';
 const SEARCH_URL = `${BASE_URL}/snap/informacoes/cpf`; // Criar a requisição e obter o ID
 const STATUS_URL = `${BASE_URL}/status`; // Verificar o status do ID
 const RESULT_URL = `${BASE_URL}/result`; // Obter o resultado final
 
-const API_KEY = __ENV.K6_API_KEY || '46e1a1e36e414f10b4da9a0e10ce0e92';
+const API_KEY = __ENV.K6_API_KEY || 'xxxx';
 
 // Configuração do tempo de espera entre consultas
 const WAIT_TIME = 5; // Segundos entre cada requisição
